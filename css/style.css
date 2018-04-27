@@ -182,7 +182,37 @@ header.masthead {
 
 
 
-
+.tm-header-shadow {
+    position: absolute;
+    height: 16px;
+    width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    margin-top: 39px;
+}
+.tm-header-shadow div {
+    height: 16px;
+    width: 100%;
+    top: -16px;
+    position: absolute;
+}
+.tm-header-shadow div:before {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    left: 30%;
+    right: 30%;
+}
+.tm-header-shadow div:after {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    left: -2%;
+    right: 33%;
+}
+.tm-header-shadow div:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    border-radius: 100%;
+}
 
 
 
