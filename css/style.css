@@ -3,6 +3,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Pangram Light', sans-serif;
+    color: #5b5b5b;
 }
 .resposive-img{
     max-width: 100%;
@@ -28,6 +29,12 @@ h1, h2, h3, h4, h5, h6 {
 .p10{
     padding: 10px;
 }
+.pt20{
+    padding-top:20px; 
+}
+.mb0{
+    margin-bottom: 0px;
+}
 .svg-ptr{
     padding-top: 200px;
 }
@@ -46,8 +53,18 @@ h1, h2, h3, h4, h5, h6 {
 .fw500{
     font-weight: 500;
 }
+.fw600{
+    font-weight: 600;
+}
 .activecj{
     /*border-top: 2px solid #a99234;*/
+}
+.btn {
+    font-weight: 100;
+    text-transform: none;
+    border: none;
+    border-radius: 300px;
+    font-family: 'Pangram Light', sans-serif;
 }
 header.masthead {
     padding-top: 8rem;
@@ -89,11 +106,16 @@ header.masthead {
     padding: 8rem 0;
     padding-bottom: 0px;
 }
+.bg-primary-2 {
+    background-color: #fefeec!important;
+    padding: 8rem 0;
+}
 .home-servicios-text{
     text-align: center;
     font-size: 28px;
     padding-bottom: 30px;
     font-weight: 600;
+    color: #5b5b5b;
 }
 .home-servicios-text-2{
     font-size: 20px;
@@ -105,15 +127,25 @@ header.masthead {
     font-size: 28px;
     padding-bottom: 30px;
     font-weight: 600;
+    color: #5b5b5b;
 }
 .home-servicios-text-4{
     text-align: left;
     font-size: 35px;
     padding-bottom: 30px;
     font-weight: 500;
+    color: #5b5b5b;
+}
+.home-servicios-text-5{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    color: #a99234;
 }
 .home-servicios-text-2 span{
     font-weight: 600;
+    color: #5b5b5b;
 }
 .trc{
     text-align: center
@@ -205,6 +237,7 @@ header.masthead {
     font-size: 28px;
     padding-bottom: 30px;
     font-weight: 600;
+    color: #5b5b5b;
 }
 
 
@@ -249,6 +282,12 @@ header.masthead {
     margin: 0;
     margin-left: 10px;
 }
+.ht-cj-2{
+    max-width: 100px;
+    border-width: 3px;
+    border-color: #a99234;
+    margin-top: 50px;
+}
 .text-justi{
     text-align: justify;
 }
@@ -278,8 +317,97 @@ header.masthead {
 .br4{
     border-radius: 4px;
 }
+.box-services-1 {
+    background: #fff;
+    padding: 20px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.box-services-2 {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.box-services-2:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.box-services-2 .price:hover{
+    color: #a99234;
+    font-size: 29px;
+    transition: 0.3s;
+}
+.box-services-3 {
+    background: #fff;
+    padding: 20px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.p-rprice{
+    margin-bottom: 5px;
+    margin-top: 30px;
+    color: #a1a1a1;
+    text-decoration: line-through;
+}
+.imggirl{
+    height: 341px;
+    background: url(../img/services/11.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.imggirl:hover {
+    height: 341px;
+    background: url(../img/services/1-22.png) no-repeat;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+    background-size: 100%;
+}
+.btn-horario{
+    border: 1px solid #a99234;
+    color: #a99234;
+    font-weight: 500;
+}
+.btn-horario:hover{
+    border: 1px solid #a99234;
+    color: #a99234;
+    background: #fefeec;
+    font-weight: 500;
+    text-decoration: none;
+}
 
-
+.collapse-serve{
+    background: #a99234;
+    transition: 0.3s;
+    padding: 20px;
+    border: 1px solid #a99234;
+}
+.collapsed {
+    background: #f5f5f5!important;
+    border: 1px solid #cccccc;
+    padding: 20px;
+}
+.collapsed:before{
+    content: '';
+    border-top: 8px solid #fff!important;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-left: 10px;
+    position: absolute;
+    bottom: -9px;
+}
+.collapse-serve:before {
+    content: '';
+    border-top: 8px solid #a99234;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-left: 10px;
+    position: absolute;
+    bottom: -9px;
+  }
+  .ser-coll{
+    cursor: pointer;
+  }
+  .ser-coll:hover{
+    background: #a99234!important;
+  }
 
 
 
@@ -321,6 +449,9 @@ header.masthead {
     .pt60res{
         padding-top: 55px;
     }
+    .dis-none-min{
+        display: none;
+    }
 }
 
 @media (max-width: 768px){
@@ -342,6 +473,41 @@ header.masthead {
     font-family: "Pangram Light";
     src: url(../fonts/Pangram-Light.otf) format("truetype");
 }
+@font-face {
+    font-family: "Pangram Bold";
+    src: url(../fonts/Pangram-ExtraBold.otf) format("truetype");
+}
 .pangram{
     font-family: 'Pangram Light', sans-serif;
 }
+.pangram-bold{
+    font-family: 'Pangram Bold', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
