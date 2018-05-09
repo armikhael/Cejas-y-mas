@@ -23,6 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
   </head>
@@ -70,14 +71,14 @@
     <div id="carouselExampleIndicators" class="carousel slide dis-none" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active" style="z-index:1;">
-          <img class="d-block img-fluid" src="img/home/slider/slider1.jpg"  width="100%">
+          <img class="d-block img-fluid revealOnScroll" src="img/home/slider/slider1.jpg"  width="100%" data-animation="fadeIn">
           <div class="carousel-caption-slider1">
             <div class="container">
               <div class="row">
                 <div class="col-md-6">
-                  <img src="img/logo.png" width="100%">
+                  <img class="revealOnScroll" src="img/logo.png" width="100%" data-animation="flipInX">
                   <br><br>
-                  <h2 class="slider-text-1">"La única manera de no <span>TRIUNFAR</span> es no practicar"</h2>
+                  <h2 class="slider-text-1 revealOnScroll" data-animation="pulse">"La única manera de no <span>TRIUNFAR</span> es no practicar"</h2>
                 </div>
                 <div class="col-md-6">
                 </div>
@@ -92,35 +93,55 @@
               <div class="row">
                 <div class="col-md-6">
                   <div style="margin-left: -150px;" id="parallax">
-                    <div class="layer" data-depth="0.6">
-                      <img src="img/home/slider/s29.png" class="slider2-img-1 some-space">
+                    <div class="revealOnScroll" data-animation="fadeInLeft">
+                      <div class="layer" data-depth="0.6" >
+                        <img src="img/home/slider/s29.png" class="slider2-img-1 some-space">
+                      </div>
                     </div>
-                    <div class="layer" data-depth="0.3">
-                      <img src="img/home/slider/s27.png" class="slider2-img-2 some-space">
+                    <div class="revealOnScroll" data-animation="fadeInDownBig">
+                      <div class="layer" data-depth="0.3">
+                        <img src="img/home/slider/s27.png" class="slider2-img-2 some-space">
+                      </div>
                     </div>
-                    <div class="layer" data-depth="0.2">
-                      <img src="img/home/slider/s28.png" class="slider2-img-3 some-space">
+                    <div class="revealOnScroll" data-animation="fadeInRightBig">
+                      <div class="layer" data-depth="0.2">
+                        <img src="img/home/slider/s28.png" class="slider2-img-3 some-space">
+                      </div>
                     </div>
-                    <div class="layer" data-depth="0.5">
-                      <img src="img/home/slider/s21.png" class="slider2-img-4 some-space">
+                    <div class="revealOnScroll" data-animation="fadeInRight">
+                      <div class="layer" data-depth="0.5">
+                        <img src="img/home/slider/s21.png" class="slider2-img-4 some-space">
+                      </div>
                     </div>
-                    <div class="layer" data-depth="0.6">
-                      <img src="img/home/slider/s20.png" class="slider2-img-5 some-space">
+                    <div class="revealOnScroll" data-animation="fadeInUpBig">
+                      <div class="layer" data-depth="0.6">
+                        <img src="img/home/slider/s20.png" class="slider2-img-5 some-space">
+                      </div>
                     </div>
-                    <div class="layer" data-depth="0.9">
-                      <img src="img/home/slider/s23.png" class="slider2-img-6 some-space">
+                    <div class="revealOnScroll" data-animation="bounce">
+                      <div class="layer" data-depth="0.9">
+                        <img src="img/home/slider/s23.png" class="slider2-img-6 some-space">
+                      </div>
                     </div>
-                    <div class="layer" data-depth="0.7">
-                      <img src="img/home/slider/s22.png" class="slider2-img-7 some-space">
+                    <div class="revealOnScroll" data-animation="shake">
+                      <div class="layer" data-depth="0.7">
+                        <img src="img/home/slider/s22.png" class="slider2-img-7 some-space">
+                      </div>
                     </div>
-                    <div class="layer" data-depth="0.4">
-                      <img src="img/home/slider/s24.png" class="slider2-img-8 some-space">
+                    <div class="revealOnScroll" data-animation="rollIn">
+                      <div class="layer" data-depth="0.4">
+                        <img src="img/home/slider/s24.png" class="slider2-img-8 some-space">
+                      </div>
                     </div>
-                    <div class="layer" data-depth="0.3">
-                      <img src="img/home/slider/s25.png" class="slider2-img-9 some-space">
+                    <div class="revealOnScroll" data-animation="zoomInRight">
+                      <div class="layer" data-depth="0.3">
+                        <img src="img/home/slider/s25.png" class="slider2-img-9 some-space">
+                      </div>
                     </div>
-                    <div class="layer" data-depth="0.1">
-                      <img src="img/home/slider/s26.png" class="slider2-img-10 some-space">
+                    <div class="revealOnScroll" data-animation="rotateIn">
+                      <div class="layer" data-depth="0.1">
+                        <img src="img/home/slider/s26.png" class="slider2-img-10 some-space">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -133,23 +154,32 @@
                     <br>
                     <a href="services.html" class="btn btn-light btn-ver-mas">Ver más</a>
                   </div>
-                  <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-toggle-content-active" id="slide-5-layer-1" data-x="['left','left','left','left']" data-hoffset="['746','746','746','746']" data-y="['top','top','top','top']" data-voffset="['-168','-168','-168','-168']" data-width="1200" data-height="1200" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:right;rX:{-90,90};skX:-85px;&quot;,&quot;to&quot;:&quot;o:1;rZ:328;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 14; background-color: rgb(248, 100, 166); border-radius: 30px; visibility: inherit; transition: none; text-align: inherit; line-height: 19px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 11px; white-space: nowrap; min-height: 862px; min-width: 862px; max-height: 862px; max-width: 862px; opacity: 1; transform: matrix3d(0.848048, -0.529919, 0, 0, 0.529919, 0.848048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"> </div>
+                  <div class="revealOnScroll" data-animation="fadeInRight">
+                    <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-toggle-content-active" id="slide-5-layer-1" data-x="['left','left','left','left']" data-hoffset="['746','746','746','746']" data-y="['top','top','top','top']" data-voffset="['-168','-168','-168','-168']" data-width="1200" data-height="1200" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:right;rX:{-90,90};skX:-85px;&quot;,&quot;to&quot;:&quot;o:1;rZ:328;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 14; background-color: rgb(248, 100, 166); border-radius: 30px; visibility: inherit; transition: none; text-align: inherit; line-height: 19px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 11px; white-space: nowrap; min-height: 862px; min-width: 862px; max-height: 862px; max-width: 862px; opacity: 1; transform: matrix3d(0.848048, -0.529919, 0, 0, 0.529919, 0.848048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"> </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
+          
           <img class="d-block img-fluid" src="img/home/slider/slider3.jpg"  width="100%">
           <div class="carousel-caption-slider1">
             <div class="container">
               <div class="row">
                 <div class="col-md-6">
-                  <img src="img/home/slider/3.jpg" width="100%">
+                  <div id="parallax2">
+                    <div class="revealOnScroll" data-animation="fadeIn">
+                      <div class="layer" data-depth="0.2">
+                        <img src="img/home/slider/3.0.png" width="100%" class="some-space">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-md-6">
-                  <h2 class="home-servicios-text">Ven a disfrutar de nuestro</h2>
-                  <h2 class="home-servicios-text-5 pangram-bold fs55">¡ HAPPY HOURS !</h2>
+                  <h2 class="home-servicios-text revealOnScroll" data-animation="bounceInRight">Ven a disfrutar de nuestro</h2>
+                  <h2 class="home-servicios-text-5 pangram-bold fs55 revealOnScroll" data-animation="shake">¡ HAPPY HOURS !</h2>
                   <br>
                   <p class="slider-3-text">Todos los días de 14:00 hrs a 16:00</p>
                   <br>
@@ -190,56 +220,56 @@
 
     <section class="bg-primary">
       <div class="container">
-        <h2 class="home-servicios-text">TENEMOS SERVICIOS PARA</h2>
+        <h2 class="home-servicios-text revealOnScroll" data-animation="fadeIn">TENEMOS SERVICIOS PARA</h2>
         <div class="row">
           <div class="col-md-4">
             <div class="row trc pt30">
-                <div class="col-md-10">
+                <div class="col-md-10 revealOnScroll" data-animation="bounceInLeft">
                   <p class="fw800">Uñas, Manos y Pies</p>
                   <p class="home-servicios-text2">Luce unas manos envidiables con el Acrigel o una manicura permanente</p>
                   <br>
                 </div>
                 <div class="col-md-2">
-                  <img src="img/home/servicios/uña.png">
+                  <img src="img/home/servicios/uña.png" class="revealOnScroll" data-animation="fadeInLeft">
                 </div>
             </div>
             <div class="row trc pt30">
-                <div class="col-md-10">
+                <div class="col-md-10 revealOnScroll" data-animation="bounceInLeft">
                   <p class="fw800">Maquillaje</p>
                   <p class="home-servicios-text2">¿Es tu boda? o tienes un evento importante? no esperes más nosotros haremos que luzca fabulosa</p>
                 </div>
                 <div class="col-md-2">
-                    <img src="img/home/servicios/maquillaje.png">
+                    <img src="img/home/servicios/maquillaje.png" class="revealOnScroll" data-animation="fadeInLeft">
                   </div>
             </div>
             <div class="row trc pt30">
-                <div class="col-md-10">
+                <div class="col-md-10 revealOnScroll" data-animation="bounceInLeft">
                   <p class="fw800">Pestañas</p>
                   <p class="home-servicios-text2">¿Ya probaste el rizado de pestañas?, también  te ofrecemos un Lifting de pestañas</p>
                 </div>
                 <div class="col-md-2">
-                  <img src="img/home/servicios/pestañas.png">
+                  <img src="img/home/servicios/pestañas.png" class="revealOnScroll" data-animation="fadeInLeft">
                 </div>
             </div>
           </div>
           <div class="col-md-4 center pt30 pt150">
-            <img class="resposive-img" src="img/home/servicios/chicaservicios.png">
+            <img class="resposive-img revealOnScroll" src="img/home/servicios/chicaservicios.png" data-animation="fadeInDown">
           </div>
           <div class="col-md-4">
             <div class="row tlc pt30">
                 <div class="col-md-2">
-                  <img class="ml-15" src="img/home/servicios/cejas.png">
+                  <img class="ml-15 revealOnScroll" src="img/home/servicios/cejas.png" data-animation="fadeInRight">
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-10 revealOnScroll" data-animation="bounceInRight">
                   <p class="fw800">Cejas</p>
                   <p class="home-servicios-text2">El visagismo es la mejor en depilación, y si quieres te ofrecemos un Microblading, lucirás hermosa</p>
                 </div>
             </div>
             <div class="row tlc pt30">
                 <div class="col-md-2">
-                  <img class="ml-15" src="img/home/servicios/pigmento.png">
+                  <img class="ml-15 revealOnScroll" src="img/home/servicios/pigmento.png" data-animation="fadeInRight">
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-10 revealOnScroll" data-animation="bounceInRight">
                   <p class="fw800">Pigmentación</p>
                   <p class="home-servicios-text2">Luce unos labios y ojos con color, con las técnicas de SVIATOLAVS, y borramos tatuajes no deseables</p>
                   <br>
@@ -247,9 +277,9 @@
             </div>
             <div class="row tlc pt30">
                 <div class="col-md-2">
-                    <img class="ml-15" src="img/home/servicios/rostro.png">
+                    <img class="ml-15 revealOnScroll" src="img/home/servicios/rostro.png" data-animation="fadeInRight">
                   </div>
-                <div class="col-md-10">
+                <div class="col-md-10 revealOnScroll" data-animation="bounceInRight">
                   <p class="fw800">Rostro</p>
                   <p class="home-servicios-text2">Embellecemos tu rostro con una higiene facial, tendrás una piel suave y tersa</p>
                   <br>
@@ -262,11 +292,11 @@
 
     <section>
       <div class="container">
-        <h2 class="home-servicios-text">CONVOCATORIAS CURSOS/FORMACIÓN <br><br>
-            <p class="home-servicios-text-sub">Consulta la disponibilidad   mr.phibrows@gmail.com  / Info/Whatsapp: (+34) 615 070 922</p>
+        <h2 class="home-servicios-text revealOnScroll" data-animation="fadeIn">CONVOCATORIAS CURSOS/FORMACIÓN <br><br>
+            <p class="home-servicios-text-sub revealOnScroll" data-animation="fadeIn">Consulta la disponibilidad   mr.phibrows@gmail.com  / Info/Whatsapp: (+34) 615 070 922</p>
         </h2>
         <div class="row p20">
-          <div class="col-md-5 mx-auto center box-convocatoria mt40">
+          <div class="col-md-5 mx-auto center box-convocatoria mt40 revealOnScroll" data-animation="bounceInLeft">
             <img src="img/home/objeto1.jpg" width="70px">
             <p class="convocatoria-title">MICROBLADING</p>
             <br>
@@ -277,7 +307,7 @@
             <p class="check-i"><i class="fa fa-check-circle-o"></i> Incluye Kit completo</p>
             <p class="check-i"><i class="fa fa-check-circle-o"></i> Diploma certificadoo</p>
           </div>
-          <div class="col-md-5 mx-auto center box-convocatoria mt40">  
+          <div class="col-md-5 mx-auto center box-convocatoria mt40 revealOnScroll" data-animation="bounceInRight">  
             <img src="img/home/objeto2.jpg" width="70px">
             <p class="convocatoria-title">VISAGISMO</p>
             <br>
@@ -312,10 +342,10 @@
       <div class="container svg-ptr">
         <div class="row p20">
           <div class="col-md-5 center mt40">
-            <img src="img/home/logo.png" class="resposive-img p20">
+            <img src="img/home/logo.png" class="resposive-img p20 revealOnScroll" data-animation="rollIn">
           </div>
           <div class="col-md-7 left mt40">  
-              <h2 class="home-servicios-text-3">CURSOS/FORMACIÓN</h2>
+              <h2 class="home-servicios-text-3 revealOnScroll" data-animation="fadeInDown">CURSOS/FORMACIÓN</h2>
               <br>
               <ul>
                 <li>Microblading NIVEL 1 </li>
@@ -339,11 +369,11 @@
       </div>
     </section>
 
-    <section>
+    <!--<section>
       <div class="container">
         <h2 class="home-insta-text">INSTAGRAN</h2>
       </div>
-    </section>
+    </section>-->
 
 
     <footer class="bg-footer">
@@ -380,15 +410,15 @@
                 <a href="https://www.facebook.com/cejasymaszaragoza/" target="_blank"><i class="fa fa-facebook"></i></a>
               </div>
               <br>
-              <p>@cejas.ymas
-              <p>@perfectstroke.mr</p>
-              </p>
+              <p>@cejasymas.phibrows</p>
+              <p>@marisela_rabago_academy</p>
           </div>
         </div>
       </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/parallax/jquery.parallax.js"></script>
     <script src="vendor/parallax/index.js"></script>
@@ -401,6 +431,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+
+    <script  src="vendor/animate.css//index.js"></script>
 
   </body>
 

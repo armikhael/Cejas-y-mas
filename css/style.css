@@ -1,5 +1,6 @@
 body {
     font-family: 'Pangram Light', sans-serif;
+    overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Pangram Light', sans-serif;
@@ -428,8 +429,8 @@ header.masthead {
   }
   .img-contact-1{
     position: absolute;
-    top: 10%;
-    left: 0;
+    top: 50px;
+    left: -12px;
 }
 .img-contact-2{
     position: absolute;
@@ -447,11 +448,11 @@ header.masthead {
     position: absolute;
     top:50%;
     bottom: 50%;
-    right: 0;
+    right: -12px;
 } 
 .img-contact-5{
     position: absolute;
-    top:10%;
+    top:60px;
     right: 0;
 } 
 .form-control{
@@ -594,9 +595,16 @@ header.masthead {
     position: absolute;
     width: 100%;
   }
-
-
-
+#parallax2, .layer {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+#parallax3, .layer {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
 
 
 
